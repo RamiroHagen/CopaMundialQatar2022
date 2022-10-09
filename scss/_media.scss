@@ -1,0 +1,25 @@
+@media (max-width:526px) and (min-width:280px){
+    .HeaderTextAbsolute{
+        position:absolute;
+        margin-top: 40vh;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgba(54, 54, 54, 0.564);
+        z-index: 2;
+    }
+}
+
+@media (max-width:767px) and (min-width:280px){
+    h5{
+        font-family: 'Fjalla One', sans-serif;
+        color:rgb(255, 255, 255);
+        width:50vw;
+        background-color:rgba(32, 21, 26, 0.527);
+        font-family: 'Fjalla One', sans-serif;
+        border-radius: 4px;
+        padding: 2px;
+        font-size: small;
+    }
+}

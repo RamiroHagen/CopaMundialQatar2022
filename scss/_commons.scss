@@ -1,0 +1,200 @@
+body{
+    background-color:rgb(45, 0, 19);
+    background-size: cover;
+}
+
+h1,h2,nav,i{
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+#NavPrincipal{
+    position: fixed;
+    font-family: 'Fjalla One', sans-serif;
+    z-index: 3;
+    width: 100vw;
+    background-color: beige;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(142, 4, 61);
+    color: rgba(142, 4, 62, 0.587);
+}
+
+#Botonera li a{
+    color: rgb(142, 4, 61);
+    border-radius: 8px;
+}
+
+#Botonera li a:hover{
+    background: linear-gradient(to bottom, rgba(142, 4, 62, 0.559), rgba(45, 0, 19, 0.596));
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+h1{
+    font-size: xx-large;
+    color:rgb(255, 248, 248);
+}
+
+h2{
+    font-size:x-large;
+    color:rgb(255, 248, 248);
+}
+
+h3{
+    font-size: xx-large;
+    margin-bottom: 4%;
+    margin-top:1%;
+    padding:1%;
+    width:auto;
+    background-color:rgba(7, 4, 5, 0.824);
+    font-family: 'Fjalla One', sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 4px;
+}
+
+h4{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width:auto;
+    background-color:rgba(32, 21, 26, 0.527);
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 4px;
+}
+
+h5{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width:auto;
+    background-color: rgba(54, 54, 54, 0.564);
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width:auto;
+    background-color:rgba(42, 1, 18, 0.822);
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+p{
+    font-family: 'Alumni Sans', sans-serif;
+    color:rgb(255, 255, 255);
+    font-size:large;
+    padding: 4%;
+}
+
+
+.ImagenPrincipal{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.HeaderRelative{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.HeaderTextAbsolute{
+    position:absolute;
+    text-align: center;
+    margin-top: 40vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 28%;
+    padding-right: 28%;
+    background-color: rgba(54, 54, 54, 0.564);
+    z-index: 2;   
+}
+
+.FormatoVideo{
+    width: 45vw;
+    height: 60vh;
+    margin-top: 30px;
+}
+
+.text-area0{
+    background-color:rgba(255, 255, 255, 0.42);
+    margin-top:40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:20px;
+    padding-top:15px;
+    text-align: center;
+}
+
+.Logo{
+    width: 100%;
+    height: 100%;
+}
+
+#bgInicio{
+    background-image: url(../img/Layer.jpg);
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    background-size: 100%;
+    border-radius: 1%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.ImgCampeones{
+    width:100%;
+    height:39vh;
+}
+
+.bgFooter{
+    background-image: url(../img/fondo_qatarContacto.jpg);
+    width: 100vw;
+    height: 16vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.imgFooter{
+    width: 100%;
+    height: 8vh;
+    margin: 5%;
+}
+
+.PaddingText{
+    padding: 60px;
+    font-size: medium;
+    margin-bottom: 6%;
+}
+
+.TitulosWidthAuto{
+    padding: 1%;
+    margin-top:80px;
+    width:auto;
+    background-image: url(../img/fondo_qatarContacto.jpg);
+    border-radius: 5px;
+}
+
+.Color1{
+    color:rgb(142, 4, 61);
+    font-size: x-large;
+}
