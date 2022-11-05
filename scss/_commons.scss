@@ -1,12 +1,12 @@
+//Empieza SCSS General//
+
 body{
-    background: rgb(126,45,54);
-    background: linear-gradient(0deg, rgba(126,45,54,1) 0%, rgba(255,255,255,1) 100%);
-    background-size: cover;
+    background: $colorBackgroundBody;
+    background: cover;
 }
 
-h1,h2,nav,i{
+h1,h2,h3,h4,h5,h6,nav,i{
     font-family: 'Fjalla One', sans-serif;
-
 }
 
 #NavPrincipal{
@@ -14,97 +14,85 @@ h1,h2,nav,i{
     font-family: 'Fjalla One', sans-serif;
     z-index: 3;
     width: 100vw;
-    background-color: beige;
+    background-color: $colorBordes;
+    div{
+        .custom-toggler.navbar-toggler {
+            color: $colorTransformNavLi;
+        }
+    }
 }
 
-.custom-toggler.navbar-toggler {
-    border-color: rgb(142, 4, 61);
-    color: rgba(142, 4, 62, 0.587);
-}
-
-#Botonera li a{
-    color: rgb(142, 4, 61);
-    border-radius: 8px;
-}
-
-#Botonera li a:hover{
-    background: linear-gradient(to bottom, rgba(142, 4, 62, 0.559), rgba(45, 0, 19, 0.596));
-    color: aliceblue;
-    cursor: pointer;
-    transition: all 0.5s;
-
+#Botonera{
+    li{
+        a {
+            color: $colorTitulosPrimary;
+            border-radius: 8px;
+            &:hover{
+                background: $colorBackgroundNavLi;
+                color: $colorBordes;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+        }
+    }
 }
 
 h1{
-    font-size: xx-large;
-    color:rgb(255, 248, 248);
+    font-size: $sizexl;
+    color: $colorTitleBlanco;
 }
 
 h2{
-    font-size:x-large;
-    color:rgb(255, 248, 248);
+    font-size: $sizel;
+    color: $colorTitleBlanco;
 }
 
 h3{
-    font-size: xx-large;
-    margin-bottom: 4%;
-    margin-top:1%;
-    padding:1%;
-    width:auto;
-    background-color:rgba(7, 4, 5, 0.824);
-    font-family: 'Fjalla One', sans-serif;
-    color:rgb(255, 255, 255);
+    font-size: $sizexxl;
+    margin-bottom: 8%;
+    margin-top: 1%;
+    padding: 1%;
+    width: auto;
+    background-color: $colorBackgroundTitulosPrimary;
+    color:$colorTitleBlanco;
     text-align: center;
     border-radius: 4px;
 }
 
 h4{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: large;
-    color:rgb(255, 255, 255);
+    font-size: $sizel;
+    color: $colorTitleBlanco;
     text-align: center;
     width:auto;
-    background-color:rgba(32, 21, 26, 0.527);
-    font-family: 'Fjalla One', sans-serif;
+    background-color: $colorBackgroundTitulosSecondary;
     border-radius: 4px;
 }
 
 h5{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: large;
-    color:rgb(255, 255, 255);
+    font-size: $sizel;
+    color: $colorTitleBlanco;
     text-align: center;
     width:auto;
-    background-color: rgba(54, 54, 54, 0.564);
-    font-family: 'Fjalla One', sans-serif;
+    background-color: $colorTitulosHeader;
     border-radius: 4px;
     padding: 12px;
 }
 
 h6{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: large;
-    color:rgb(255, 255, 255);
+    font-size: $sizel;
+    color: $colorTitleBlanco;
     text-align: center;
     width:auto;
-    background-color:rgba(42, 1, 18, 0.822);
-    font-family: 'Fjalla One', sans-serif;
+    background-color: $colorBackgroundTitulosSecondary;
     border-radius: 4px;
     padding: 12px;
 }
 
 p{
     font-family: 'Alumni Sans', sans-serif;
-    color:rgb(255, 255, 255);
-    font-size:large;
+    color: $colorTitleBlanco;
+    font-size: $sizel;
     padding: 4%;
-}
-
-
-.ImagenPrincipal{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
 }
 
 .HeaderRelative{
@@ -112,33 +100,34 @@ p{
     display:flex;
     justify-content: center;
     z-index: 1;
-}
+    div{
+        .ImagenPrincipal{
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+        }
 
-.HeaderTextAbsolute{
-    position:absolute;
-    text-align: center;
-    margin-top: 40vh;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 28%;
-    padding-right: 28%;
-    background-color: rgba(54, 54, 54, 0.564);
-    z-index: 2;   
-}
-
-.FormatoVideo{
-    width: 45vw;
-    height: 60vh;
-    margin-top: 30px;
+    }
+    .HeaderTextAbsolute{
+        position:absolute;
+        text-align: center;
+        margin-top: 40vh;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 28%;
+        padding-right: 28%;
+        background-color: $colorTitulosHeader;
+        z-index: 2;   
+    }
 }
 
 .text-area0{
-    background-color:rgba(255, 255, 255, 0.42);
+    background-color: $colorBackgroundBody2;
     margin-top:40px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom:20px;
-    padding-left:12px;
+    padding-left:16px;
     padding-right:12px;
     padding-bottom:20px;
     padding-top:15px;
@@ -146,45 +135,14 @@ p{
 }
 
 .Logo{
-    width: 100%;
-    height: 100%;
-}
-
-#bgInicio{
-    background-image: url(../img/Layer.jpg);
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    background-size: 100%;
-    border-radius: 1%;
-    padding: 5%;
-    margin-top: 5%;
-}
-
-.ImgCampeones{
-    width:100%;
-    height:39vh;
-}
-
-.bgFooter{
-    background-image: url(../img/fondo_qatarContacto.jpg);
-    width: 100vw;
-    height: 16vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 5%;
-}
-
-.imgFooter{
-    width: 100%;
-    height: 8vh;
-    margin: 5%;
+    width: $width100;
+    height: $height100;
 }
 
 .PaddingText{
     padding: 60px;
     font-size: medium;
-    margin-bottom: 6%;
+    margin-bottom: 50px;
 }
 
 .TitulosWidthAuto{
@@ -195,7 +153,220 @@ p{
     border-radius: 5px;
 }
 
+
 .Color1{
-    color:rgb(142, 4, 61);
-    font-size: x-large;
+    color: $colorTitulosPrimary;
+    font-size: $sizexl;
+}
+
+.LeterXl{
+    font-size: $sizexxl;
+}
+
+//Termina SCSS General//
+
+
+//Selectores Campeones//
+
+.bgCards{
+    width: 90%;
+    background-image: url(../img/fondo_qatar2.jpg);
+    background-size: $width100;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size: cover;
+    margin-left: 2.3vw;
+    margin-bottom: 50px;
+    &:hover{
+        .ImgCampeones {-webkit-transform:scale(1.4);transform:scale(1.4);
+            transition: all 0.5s;}
+        h3{-webkit-transform:scale(1.4);transform:scale(1.4);
+            transition: all 0.5s;}
+    }
+    .ImgCampeones{
+        width: $width100;
+        height: 39vh;
+    }
+    #CardResultados{
+        font-size: $sizexxl;
+        margin-top:1%;
+        padding:1%;
+        width: $width100;
+        background-color: $colorCardSecondary;
+        font-family: 'Fjalla One', sans-serif;
+        color: $colorTitleBlanco;
+        text-align: center;
+        border-radius: 4px;
+    }
+}
+
+//Termina Campeones//
+
+
+//Selectores Sedes//
+
+.ArticleRelativeSedes{
+    position:relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1vw;
+    margin-top: 20px;
+    .ArticleAbsoluteSedes{
+        position: absolute;
+    }
+    .FormatoTitulosSedes{
+        background: linear-gradient(90deg, rgba(45,41,41,1) 78%, rgba(0,0,0,0) 89%);
+        padding: 20%;
+        padding-right: 45px;
+        margin:0%;  
+    }
+    .ImgEstadios{
+        object-fit: cover;
+        width: 35vw;
+        height: 66vh;
+        border-radius: 4px;
+    }    
+
+    .TextReltiveSedes{
+        width: 284px;
+        height: 66vh;
+        background-color: $colorBackgroundTitulosSecondary;
+        text-align: start;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+    .VectorSedes{
+        margin-top: 20px;
+        margin-left: 5.5vw;
+    }
+}
+
+    
+
+.MapasSedes{
+    width: 34vw;
+    height: 66vh;
+}
+
+//Termina Sedes//
+
+
+//Selectores Estadios//
+
+.ArticleRelativeEstadios{
+    position: relative;
+    display: flex;
+    .ImgEstadios{
+        object-fit: cover;
+        width: 35vw;
+        height: 66vh;
+        border-radius: 4px;
+    }
+    .ArticleAbsoluteEstadios{
+        position: absolute;
+        .VectorEstadios{
+            padding-left: 72%;
+            padding-top: 24%;
+        }
+    }
+    .TextRelativeEstadios{
+        border-radius: 5px;
+        padding-top: 20px;
+        height: 66vh;
+        width: 64%;
+        text-align: start;
+        background: linear-gradient(90deg, rgb(30, 4, 4) 17%, rgb(30, 12, 12) 92%, rgba(17, 13, 13, 0) 100%);
+        margin-left: 30vw;
+    }
+    
+}
+
+//Termina Estadios//
+
+
+//Selectores Grupos//
+
+.bgCardsGrupos{
+    background-image: url(../img/fondo_qatarContacto.jpg);
+    border-radius: 4px;
+    height: 45%;
+    margin-bottom: 5%;
+    div{
+        div{
+            .ImgGrupos{
+                width:34%;
+                height:90%;
+            }
+        }
+    }
+}
+
+//Termina Grupos//
+
+
+//Selectores Noticias//
+
+.imgCardNoticias{
+    width: 26vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.CardTextNoticias{
+    font-family: 'Alumni Sans', sans-serif;
+    color: $colorBackgroundTitulosPrimary;
+    font-size: $sizel;
+    text-align: start;
+    padding-top: 10px;
+}
+    .BotonNoticia{
+        color: $colorTitulosPrimary;
+        font-size: $sizexl;
+        padding: 0%;
+        margin-right:18px;
+}
+
+#BotonNoticiasBG{
+    background-color: $colorTitulosPrimary;
+    border-color: $colorBordes;
+}
+
+//Termina Noticias//
+
+
+
+//Selectores Footer//
+
+.breadcrumb{
+    li{
+        font-family: 'Fjalla One', sans-serif;
+    }
+    #FormatoGuiaFooter{
+        font-family: 'Fjalla One', sans-serif;
+        text-decoration: none;
+        color: $colorTitleBlanco;   
+    }
+
+}
+
+
+.bgFooter{
+    background-image: url(../img/fondo_qatarContacto.jpg);
+    width: 100vw;
+    height: 32vh;
+    background-size: $width100;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    div{
+        a{
+            .imgFooter{
+                width: 50px;
+                height: 7vh;
+                margin: 10%;
+                padding-left: 10px;
+            }
+        }
+    }
 }

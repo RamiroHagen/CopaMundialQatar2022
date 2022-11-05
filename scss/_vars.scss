@@ -1,18 +1,25 @@
-$colorBackgroundBody: rgb(45, 0, 19);
+
+//Colors//
+$colorBackgroundBody: linear-gradient(0deg, rgba(126,45,54,1) 13%, rgba(255,255,255,1) 100%);
+$colorBackgroundBody2: rgba(255, 255, 255, 0.42);
 $colorTitleBlanco: rgb(255, 248, 248);
-$colorBackgroundTitulosTransp: rgba(42, 1, 18, 0.822);
-$colorBackgroundTitulosPrimary: rgba(54, 54, 54, 0.564);
-$colorBackgroundTitulosSecondary: rgba(7, 4, 5, 0.824);
-$colorBackground1: rgba(32, 21, 26, 0.527);
-$colorBody: rgba(255, 255, 255, 0.42);
-$colorTitle2: rgb(142, 4, 61);
+$colorBackgroundNavLi: linear-gradient(to bottom, rgba(142, 4, 62, 0.559), rgba(45, 0, 19, 0.596));
+$colorTransformNavLi: rgba(142, 4, 62, 0.587);
+$colorTitulosPrimary: rgb(142, 4, 61);
+$colorTitulosHeader: rgba(54, 54, 54, 0.564);
+$colorBackgroundTitulosPrimary: rgba(7, 4, 5, 0.824);
+$colorBackgroundTitulosSecondary: rgba(42, 1, 18, 0.822);
+$colorCardSecondary: rgba(44, 36, 37, 0.676);
+$colorBordes: beige;
 
-
+//Dimensions//
 $width100: 100%;
 $height100: 100%;
 
-$sizexl: x-large;
+//Size Fonts//
 $sizexxl: xx-large;
+$sizexl: x-large;
 $sizel: large;
 $sizemd: medium;
+$sizes: small;
 

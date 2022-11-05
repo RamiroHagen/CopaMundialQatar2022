@@ -7,12 +7,11 @@
 }
 
 body {
-  background: rgb(126, 45, 54);
-  background: linear-gradient(0deg, rgb(126, 45, 54) 0%, rgb(255, 255, 255) 100%);
-  background-size: cover;
+  background: linear-gradient(0deg, rgb(126, 45, 54) 13%, rgb(255, 255, 255) 100%);
+  background: cover;
 }
 
-h1, h2, nav, i {
+h1, h2, h3, h4, h5, h6, nav, i {
   font-family: "Fjalla One", sans-serif;
 }
 
@@ -23,9 +22,7 @@ h1, h2, nav, i {
   width: 100vw;
   background-color: beige;
 }
-
-.custom-toggler.navbar-toggler {
-  border-color: rgb(142, 4, 61);
+#NavPrincipal div .custom-toggler.navbar-toggler {
   color: rgba(142, 4, 62, 0.587);
 }
 
@@ -33,83 +30,69 @@ h1, h2, nav, i {
   color: rgb(142, 4, 61);
   border-radius: 8px;
 }
-
 #Botonera li a:hover {
   background: linear-gradient(to bottom, rgba(142, 4, 62, 0.559), rgba(45, 0, 19, 0.596));
-  color: aliceblue;
+  color: beige;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: x-large;
   color: rgb(255, 248, 248);
 }
 
 h2 {
-  font-size: x-large;
+  font-size: large;
   color: rgb(255, 248, 248);
 }
 
 h3 {
   font-size: xx-large;
-  margin-bottom: 4%;
+  margin-bottom: 8%;
   margin-top: 1%;
   padding: 1%;
   width: auto;
   background-color: rgba(7, 4, 5, 0.824);
-  font-family: "Fjalla One", sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 248, 248);
   text-align: center;
   border-radius: 4px;
 }
 
 h4 {
-  font-family: "Fjalla One", sans-serif;
   font-size: large;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 248, 248);
   text-align: center;
   width: auto;
-  background-color: rgba(32, 21, 26, 0.527);
-  font-family: "Fjalla One", sans-serif;
+  background-color: rgba(42, 1, 18, 0.822);
   border-radius: 4px;
 }
 
 h5 {
-  font-family: "Fjalla One", sans-serif;
   font-size: large;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 248, 248);
   text-align: center;
   width: auto;
   background-color: rgba(54, 54, 54, 0.564);
-  font-family: "Fjalla One", sans-serif;
   border-radius: 4px;
   padding: 12px;
 }
 
 h6 {
-  font-family: "Fjalla One", sans-serif;
   font-size: large;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 248, 248);
   text-align: center;
   width: auto;
   background-color: rgba(42, 1, 18, 0.822);
-  font-family: "Fjalla One", sans-serif;
   border-radius: 4px;
   padding: 12px;
 }
 
 p {
   font-family: "Alumni Sans", sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 248, 248);
   font-size: large;
   padding: 4%;
-}
-
-.ImagenPrincipal {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
 }
 
 .HeaderRelative {
@@ -118,8 +101,12 @@ p {
   justify-content: center;
   z-index: 1;
 }
-
-.HeaderTextAbsolute {
+.HeaderRelative div .ImagenPrincipal {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.HeaderRelative .HeaderTextAbsolute {
   position: absolute;
   text-align: center;
   margin-top: 40vh;
@@ -131,19 +118,13 @@ p {
   z-index: 2;
 }
 
-.FormatoVideo {
-  width: 45vw;
-  height: 60vh;
-  margin-top: 30px;
-}
-
 .text-area0 {
   background-color: rgba(255, 255, 255, 0.42);
   margin-top: 40px;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
-  padding-left: 12px;
+  padding-left: 16px;
   padding-right: 12px;
   padding-bottom: 20px;
   padding-top: 15px;
@@ -155,41 +136,10 @@ p {
   height: 100%;
 }
 
-#bgInicio {
-  background-image: url(../img/Layer.jpg);
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
-  background-size: 100%;
-  border-radius: 1%;
-  padding: 5%;
-  margin-top: 5%;
-}
-
-.ImgCampeones {
-  width: 100%;
-  height: 39vh;
-}
-
-.bgFooter {
-  background-image: url(../img/fondo_qatarContacto.jpg);
-  width: 100vw;
-  height: 16vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 5%;
-}
-
-.imgFooter {
-  width: 100%;
-  height: 8vh;
-  margin: 5%;
-}
-
 .PaddingText {
   padding: 60px;
   font-size: medium;
-  margin-bottom: 6%;
+  margin-bottom: 50px;
 }
 
 .TitulosWidthAuto {
@@ -205,196 +155,8 @@ p {
   font-size: x-large;
 }
 
-h1, h2, nav, i {
-  font-family: "Fjalla One", sans-serif;
-}
-
-#NavPrincipal {
-  position: fixed;
-  font-family: "Fjalla One", sans-serif;
-  z-index: 3;
-  width: 100vw;
-  background-color: beige;
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: rgb(142, 4, 61);
-  color: rgba(142, 4, 62, 0.587);
-}
-
-#Botonera li a {
-  color: rgb(142, 4, 61);
-  border-radius: 8px;
-}
-
-#Botonera li a:hover {
-  background: linear-gradient(to bottom, rgba(142, 4, 62, 0.559), rgba(45, 0, 19, 0.596));
-  color: aliceblue;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-h1 {
+.LeterXl {
   font-size: xx-large;
-  color: rgb(255, 248, 248);
-}
-
-h2 {
-  font-size: x-large;
-  color: rgb(255, 248, 248);
-}
-
-h3 {
-  font-size: xx-large;
-  margin-bottom: 4%;
-  margin-top: 1%;
-  padding: 1%;
-  width: auto;
-  background-color: rgba(7, 4, 5, 0.824);
-  font-family: "Fjalla One", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border-radius: 4px;
-}
-
-h4 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: large;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  width: auto;
-  background-color: rgba(32, 21, 26, 0.527);
-  font-family: "Fjalla One", sans-serif;
-  border-radius: 4px;
-}
-
-h5 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: large;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  width: auto;
-  background-color: rgba(54, 54, 54, 0.564);
-  font-family: "Fjalla One", sans-serif;
-  border-radius: 4px;
-  padding: 12px;
-}
-
-h6 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: large;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  width: auto;
-  background-color: rgba(42, 1, 18, 0.822);
-  font-family: "Fjalla One", sans-serif;
-  border-radius: 4px;
-  padding: 12px;
-}
-
-p {
-  font-family: "Alumni Sans", sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: large;
-  padding: 4%;
-}
-
-.ImagenPrincipal {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-}
-
-.HeaderRelative {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-.HeaderTextAbsolute {
-  position: absolute;
-  text-align: center;
-  margin-top: 40vh;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 28%;
-  padding-right: 28%;
-  background-color: rgba(54, 54, 54, 0.564);
-  z-index: 2;
-}
-
-.FormatoVideo {
-  width: 45vw;
-  height: 60vh;
-  margin-top: 30px;
-}
-
-.text-area0 {
-  background-color: rgba(255, 255, 255, 0.42);
-  margin-top: 40px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 20px;
-  padding-top: 15px;
-  text-align: center;
-}
-
-.Logo {
-  width: 100%;
-  height: 100%;
-}
-
-#CardResultados {
-  font-size: xx-large;
-  margin-top: 1%;
-  padding: 1%;
-  width: 100%;
-  background-color: rgba(44, 36, 37, 0.676);
-  font-family: "Fjalla One", sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border-radius: 4px;
-}
-
-#bgInicio {
-  background-image: url(../img/Layer.jpg);
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
-  background-size: 100%;
-  border-radius: 1%;
-  padding: 5%;
-  margin-top: 5%;
-}
-
-#HoverNoticias:hover {
-  filter: blur(2px);
-}
-
-.FotosNoticias {
-  width: 94%;
-  height: 480px;
-  object-fit: cover;
-  padding-left: 6vw;
-  padding-top: 1vh;
-  border-radius: 4px;
-}
-
-.bgNoticias {
-  background-color: rgba(255, 255, 255, 0.945);
-  margin-top: 4%;
-  padding-bottom: 4%;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-.ImgCampeones {
-  width: 100%;
-  height: 39vh;
 }
 
 .bgCards {
@@ -407,60 +169,109 @@ p {
   margin-left: 2.3vw;
   margin-bottom: 50px;
 }
-
-.bgCardsGrupos {
-  background-image: url(../img/fondo_qatarContacto.jpg);
-  border-radius: 4px;
-  height: 56vh;
-}
-
 .bgCards:hover .ImgCampeones {
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
   transition: all 0.5s;
 }
-
 .bgCards:hover h3 {
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
   transition: all 0.5s;
 }
-
-.bgFooter {
-  background-image: url(../img/fondo_qatarContacto.jpg);
-  width: 100vw;
-  height: 16vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 5%;
-}
-
-.imgFooter {
+.bgCards .ImgCampeones {
   width: 100%;
-  height: 8vh;
-  margin: 5%;
+  height: 39vh;
 }
-
-.PaddingText {
-  padding: 60px;
-  font-size: medium;
-  margin-bottom: 6%;
-}
-
-.ImgGrupos {
-  width: 34%;
-  height: 90%;
-}
-
-.ImgEstadios {
-  object-fit: cover;
-  width: 80vw;
-  height: 66vh;
+.bgCards #CardResultados {
+  font-size: xx-large;
+  margin-top: 1%;
+  padding: 1%;
+  width: 100%;
+  background-color: rgba(44, 36, 37, 0.676);
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(255, 248, 248);
+  text-align: center;
   border-radius: 4px;
 }
 
-.ImgEstadiosInicio {
+.ArticleRelativeSedes {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1vw;
+  margin-top: 20px;
+}
+.ArticleRelativeSedes .ArticleAbsoluteSedes {
+  position: absolute;
+}
+.ArticleRelativeSedes .FormatoTitulosSedes {
+  background: linear-gradient(90deg, rgb(45, 41, 41) 78%, rgba(0, 0, 0, 0) 89%);
+  padding: 20%;
+  padding-right: 45px;
+  margin: 0%;
+}
+.ArticleRelativeSedes .ImgEstadios {
+  object-fit: cover;
+  width: 35vw;
   height: 66vh;
+  border-radius: 4px;
+}
+.ArticleRelativeSedes .TextReltiveSedes {
+  width: 284px;
+  height: 66vh;
+  background-color: rgba(42, 1, 18, 0.822);
+  text-align: start;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+}
+.ArticleRelativeSedes .VectorSedes {
+  margin-top: 20px;
+  margin-left: 5.5vw;
+}
+
+.MapasSedes {
+  width: 34vw;
+  height: 66vh;
+}
+
+.ArticleRelativeEstadios {
+  position: relative;
+  display: flex;
+}
+.ArticleRelativeEstadios .ImgEstadios {
+  object-fit: cover;
+  width: 35vw;
+  height: 66vh;
+  border-radius: 4px;
+}
+.ArticleRelativeEstadios .ArticleAbsoluteEstadios {
+  position: absolute;
+}
+.ArticleRelativeEstadios .ArticleAbsoluteEstadios .VectorEstadios {
+  padding-left: 72%;
+  padding-top: 24%;
+}
+.ArticleRelativeEstadios .TextRelativeEstadios {
+  border-radius: 5px;
+  padding-top: 20px;
+  height: 66vh;
+  width: 64%;
+  text-align: start;
+  background: linear-gradient(90deg, rgb(30, 4, 4) 17%, rgb(30, 12, 12) 92%, rgba(17, 13, 13, 0) 100%);
+  margin-left: 30vw;
+}
+
+.bgCardsGrupos {
+  background-image: url(../img/fondo_qatarContacto.jpg);
+  border-radius: 4px;
+  height: 45%;
+  margin-bottom: 5%;
+}
+.bgCardsGrupos div div .ImgGrupos {
+  width: 34%;
+  height: 90%;
 }
 
 .imgCardNoticias {
@@ -470,65 +281,73 @@ p {
   border-radius: 4px;
 }
 
-.ArticleRelativeEstadios {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 8px;
-}
-
-.ArticleAbsoluteEstadios {
-  position: absolute;
-  margin-right: 1vw;
-}
-
-.TextRelativeEstadios {
-  border-radius: 5px;
-  height: 66vh;
-  text-align: center;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 17%, rgb(48, 48, 48) 92%, rgba(0, 0, 0, 0) 100%);
-  margin-right: 8px;
-}
-
-.FormatoTitulosSedes {
-  background: linear-gradient(90deg, rgb(45, 41, 41) 78%, rgba(0, 0, 0, 0) 89%);
-  padding: 20%;
-  padding-right: 45px;
-  margin: 0%;
-}
-
-.TextReltiveSedes {
-  width: 20%;
-  height: 66vh;
-  background-color: rgb(45, 0, 19);
-  margin-right: 1vw;
+.CardTextNoticias {
+  font-family: "Alumni Sans", sans-serif;
+  color: rgba(7, 4, 5, 0.824);
+  font-size: large;
   text-align: start;
-  margin-right: 5px;
+  padding-top: 10px;
 }
 
-.ArticleRelativeSedes {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 1vw;
-  margin-top: 56px;
+.BotonNoticia {
+  color: rgb(142, 4, 61);
+  font-size: x-large;
+  padding: 0%;
+  margin-right: 18px;
 }
 
-.ArticleAbsoluteSedes {
-  position: absolute;
+#BotonNoticiasBG {
+  background-color: rgb(142, 4, 61);
+  border-color: beige;
 }
 
-.TitulosWidthAuto {
-  padding: 1%;
-  margin-top: 80px;
-  width: auto;
+.breadcrumb li {
+  font-family: "Fjalla One", sans-serif;
+}
+.breadcrumb #FormatoGuiaFooter {
+  font-family: "Fjalla One", sans-serif;
+  text-decoration: none;
+  color: rgb(255, 248, 248);
+}
+
+.bgFooter {
   background-image: url(../img/fondo_qatarContacto.jpg);
-  border-radius: 5px;
+  width: 100vw;
+  height: 32vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+}
+.bgFooter div a .imgFooter {
+  width: 50px;
+  height: 7vh;
+  margin: 10%;
+  padding-left: 10px;
 }
 
-.BotonNoticiasInicio {
-  display: flex;
-  justify-content: flex-end;
+.FormatoVideoInicio {
+  width: 45vw;
+  height: 60vh;
+  margin-top: 30px;
+}
+
+#bgInicio {
+  background-image: url(../img/fondo_qatar2.jpg);
+  width: 100%;
+  height: 90%;
+  background-size: 100%;
+  border-radius: 1%;
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.ImgGruposInicio {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ImgEstadiosInicio {
+  height: 66vh;
 }
 
 .CardNoticiasInicio {
@@ -537,28 +356,71 @@ p {
   background-position-x: 900px;
   object-fit: cover;
 }
-
-.CardTextNoticias {
-  font-family: "Alumni Sans", sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: large;
-  text-align: start;
-  padding-top: 10px;
-}
-
-.BotonNoticia {
-  color: brown;
-  font-size: x-large;
-  padding: 0%;
-  margin-right: 18px;
-}
-
-.FormatoCardNoticas {
+.CardNoticiasInicio .FormatoCardNoticas {
   height: 33vh;
 }
+.CardNoticiasInicio div .BotonNoticiasInicio {
+  display: flex;
+  justify-content: flex-start;
+}
+.CardNoticiasInicio div .BotonNoticiasInicio #BotonNoticiasBG {
+  background-color: rgb(142, 4, 61);
+  border-color: beige;
+}
 
-#BotonNoticiasBG {
-  background-color: brown;
+@media (max-width: 450px) and (min-width: 300px) {
+  .HeaderTextAbsolute {
+    border-radius: 4px;
+  }
+  .HeaderTextAbsolute h2 {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 472px) {
+  .bgCardsGrupos div div .ImgGrupos {
+    width: 72vw;
+    height: 55vh;
+  }
+  .textnone {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .imgCardNoticias {
+    width: 70vw;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .CardTextNoticias {
+    font-family: "Alumni Sans", sans-serif;
+    color: rgba(7, 4, 5, 0.824);
+    font-size: medium;
+    text-align: start;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 944px) {
+  .VectorEstadios {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 838px) {
+  .VectorSedes {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 690px) {
+  iframe {
+    display: none;
+  }
+  .TextReltiveSedes {
+    display: flex;
+    align-items: center;
+  }
+  .FormatoTitulosSedes {
+    font-size: medium;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
